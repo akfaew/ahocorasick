@@ -62,8 +62,12 @@ func (m *Machine) Build(keywords [][]byte) (err error) {
 				inState = m.f(inState)
 				goto set_state
 			}
-			if _, ok := m.output[outState]; ok {
-				m.output[n.Base] = append(m.output[outState], m.output[n.Base]...)
+			if _, ok := m.output[outState]; ok != false {
+				copyOutState := make([][]byte, 0)
+				for _, o := range m.output[outState] {
+					copyOutState = append(copyOutState, o)
+				}
+				m.output[n.Base] = append(copyOutState, m.output[n.Base]...)
 			}
 			m.setF(n.Base, outState)
 		}

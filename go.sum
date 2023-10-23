@@ -1,7 +1,7 @@
 github.com/akfaew/darts v0.0.0-20190713084632-c9f684fef186 h1:M6Z+4QeghXMZiNfWWvOD/pb40CklX3tvLyIeUA4dEMg=
 github.com/akfaew/darts v0.0.0-20190713084632-c9f684fef186/go.mod h1:FYQpLk9jru/QIajzem2pZ0A7j0msVQs5Q5Y7f9QlPd8=
-github.com/akfaew/utils v0.0.0-20231021075642-768dd940b2c7 h1:Wt2jzOlh9tyJrwoI7x5hsu01rXp+NI0Dttw6zEk275k=
-github.com/akfaew/utils v0.0.0-20231021075642-768dd940b2c7/go.mod h1:UGnNHWiMTze83Rm/qUKBBtdgV4GBdQoYLEBJP5p85rY=
+github.com/akfaew/utils v0.0.0-20231022132357-3b6eafac7883 h1:6WmZaNDokj5owZmUz9oTP58cH2JX2Iarsk2HryRIqYE=
+github.com/akfaew/utils v0.0.0-20231022132357-3b6eafac7883/go.mod h1:UGnNHWiMTze83Rm/qUKBBtdgV4GBdQoYLEBJP5p85rY=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

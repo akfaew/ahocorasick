@@ -1,6 +1,8 @@
 package goahocorasick
 
 import (
+	"os"
+
 	godarts "github.com/akfaew/darts"
 
 	"fmt"
@@ -42,7 +44,10 @@ func (m *Machine) Build(keywords [][]byte) (err error) {
 	m.failure = make([]int, len(m.trie.Base))
 	for _, c := range trie.Root.Children {
 		if c.Base == -1 {
-			return fmt.Errorf("invalid trie (c.Base == -1). Keywords = %+v len() = %d", keywords, len(keywords)) // to debug why sometimes it's -1
+			for _, v := range keywords {
+				fmt.Fprintf(os.Stderr, "keyword: %s\n", string(v))
+			}
+			return fmt.Errorf("invalid trie (c.Base == -1). len(keywords) = %d", len(keywords)) // to debug why sometimes it's -1
 		}
 		m.failure[c.Base] = godarts.ROOT_NODE_BASE
 	}
